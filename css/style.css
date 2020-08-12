@@ -12,7 +12,7 @@ body {
     padding: 3vh 3vw;
 }
 
-img {
+.pokemon {
     height: 350px;
     weight: 350px;
     position: relative;
@@ -33,4 +33,7 @@ img {
     margin-bottom: 35px;
     font-size: 20px;
     text-align: center;
+    position: relative;
+    top: 30vh;
+    left: -37vw;
 }

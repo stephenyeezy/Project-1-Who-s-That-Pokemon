@@ -7,12 +7,14 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <script src="js/main.js"></script>
-    <div class="image"><img class="pokemon" src=null alt = "Selected Pokemon">
+    <audio autoplay>
+        <source src="http://www.pokezorworld.com/anime/wav/whosthatpokemon.wav" type="audio/x-wav">
+    </audio>
+    <div class="image"><img class="pokemon" alt = "Selected Pokemon">
         <div class=rightName></div>
     </div>
     <div class="form">
-        <form>Pokemon Name:
+        <form>Who's that Pokemon?:
             <input class="answer" type="text">
             <input class="submit" type="submit" value="Submit">
         </form>
@@ -20,5 +22,6 @@
     <div class="score">
         <h3>Score: 0</h3>
     </div>
+    <script src="js/main.js"></script>
 </body>
 </html>
