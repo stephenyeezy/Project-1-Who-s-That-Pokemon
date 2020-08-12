@@ -1,0 +1,36 @@
+body {
+    align-items: center;
+    background: red url('https://i.imgur.com/8UFCDym.png');
+    background-clip: content-box;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    font-family: 'Helvetica';
+    min-height: 100vh;
+    min-width: 100%;
+    padding: 3vh 3vw;
+}
+
+img {
+    height: 350px;
+    weight: 350px;
+    position: relative;
+    left: 15vw;
+}
+
+.score{
+    margin:0 auto;
+    font-size:40px;
+    color:white;
+    position: fixed;
+    left: 80vw;
+    top: -1vh;
+}
+
+.form {
+    margin: 0 auto;
+    margin-bottom: 35px;
+    font-size: 20px;
+    text-align: center;
+}
