@@ -13,19 +13,19 @@ body {
 }
 
 .pokemon {
-    height: 350px;
-    weight: 350px;
+    height: 400px;
+    weight: 400px;
     position: relative;
     left: 15vw;
 }
 
 .score{
     margin:0 auto;
-    font-size:40px;
+    font-size:60px;
     color:white;
     position: fixed;
-    left: 80vw;
-    top: -1vh;
+    left: 75vw;
+    top: -5vh;
 }
 
 .form {
