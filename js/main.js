@@ -25,8 +25,15 @@ const allPokemon = [charmander, sandshrew, vulpix]
 /*----- functions -----*/
 
 function startGame() {
-    let random =Math.ceil(Math.random() * 3)
-    i = random
-    pokeImg.src = allPokemon[i].silhouette
+    let random =Math.ceil(Math.random() * 3) -1
+    console.log(random)
+    pokeImg.src = allPokemon[random].silhouette
+    playSound()
 }
 window.onload = startGame;
+
+function playSound() {
+    let audio = document.createElement("audio")
+    audio.src="whosthatpokemon.wav"
+    audio.play()
+}
