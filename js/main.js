@@ -1,4 +1,5 @@
 /*----- constants -----*/
+
 class Pokemon {
     constructor(name, silhouette, imgfull) {
         this.name = name
@@ -8,6 +9,8 @@ class Pokemon {
 }
 
 /*----- app's state (variables) -----*/
+
+let startButton = document.querySelector(".start")
 const scoreCounter = document.querySelector('h3')
 let pokeImg = document.querySelector('.pokemon')
 const pokeName = document.querySelector('pName')
@@ -21,16 +24,15 @@ const allPokemon = [charmander, sandshrew, vulpix]
 
 /*----- event listeners -----*/
 
+startButton.addEventListener('click', startGame)
 
 /*----- functions -----*/
 
 function startGame() {
-    let random =Math.ceil(Math.random() * 3) -1
-    console.log(random)
+    let random = Math.ceil(Math.random() * 3) -1
     pokeImg.src = allPokemon[random].silhouette
     playSound()
 }
-window.onload = startGame;
 
 function playSound() {
     let audio = document.createElement("audio")
