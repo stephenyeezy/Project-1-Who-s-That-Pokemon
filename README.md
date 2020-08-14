@@ -3,9 +3,9 @@ A guessing game based on the segment from classic TV show, Pokemon.
 ## Screenshots
 
 ## Technology Used
-..* JavaScript
-..* CSS
-..* HTML
+* JavaScript
+* CSS
+* HTML
 ## Getting Started
 
 ## Next Steps
