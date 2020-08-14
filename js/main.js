@@ -9,6 +9,15 @@ class Pokemon {
 }
 
 /*----- app's state (variables) -----*/
+let i = 0
+let counter = 0
+const charmander = new Pokemon('Charmander', './images/silhouette_charmander.png', './images/charmander.png')
+const sandshrew = new Pokemon('Sandshrew', './images/silhouette_sandshrew.png', './images/sandshrew.png')
+const vulpix = new Pokemon('Vulpix', './images/silhouette_vulpix.png', './images/vulpix.png')
+
+const allPokemon = [charmander, sandshrew, vulpix]
+
+/*----- cached element references -----*/
 
 let startButton = document.querySelector(".start")
 const scoreCounter = document.querySelector('h3')
@@ -17,13 +26,6 @@ const pokeName = document.querySelector('.monName')
 const enterButton = document.querySelector('.enter')
 const guess = document.querySelector('.answer')
 let rightMon = document.querySelector('.image')
-
-const charmander = new Pokemon('Charmander', './images/silhouette_charmander.png', './images/charmander.png')
-const sandshrew = new Pokemon('Sandshrew', './images/silhouette_sandshrew.png', './images/sandshrew.png')
-const vulpix = new Pokemon('Vulpix', './images/silhouette_vulpix.png', './images/vulpix.png')
-
-const allPokemon = [charmander, sandshrew, vulpix]
-/*----- cached element references -----*/
 
 /*----- event listeners -----*/
 
