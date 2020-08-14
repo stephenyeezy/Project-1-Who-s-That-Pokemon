@@ -20,3 +20,4 @@ Click start button to start playing!
 ## Next Steps
 * Add more Pokemon
 * Update to more complex scoring system
+* Add mobile optimization
