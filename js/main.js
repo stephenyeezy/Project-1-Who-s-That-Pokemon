@@ -43,7 +43,8 @@ enterButton.addEventListener('click', checkAnswer)
 /*----- functions -----*/
 
 function startGame() {
-    scoreCounter.innerText = 'Score: 0'
+    counter = 0
+    scoreCounter = 'Score: 0'
     let random = Math.ceil(Math.random() * 10) -1
     i = random
     pokeImg.src = allPokemon[i].silhouette
