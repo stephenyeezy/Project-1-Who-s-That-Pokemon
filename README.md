@@ -1,4 +1,4 @@
-# Project 1:Who-s-That-Pokemon?
+# Project 1: Who's That Pokemon?
 A guessing game based on the segment from classic TV show, Pokemon.
 ## Screenshots
 ![Imgur](https://i.imgur.com/8UFCDym.png)
