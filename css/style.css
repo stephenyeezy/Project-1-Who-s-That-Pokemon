@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'pokemon-font';
+    src: url('../fonts/pokemon-font.woff2') format('woff2')
+         url('../fonts/pokemon-font.woff') format('woff')
+         url('../fonts/pokemon-font.ttf')  format('truetype')
+  }
+  
 body {
     align-items: center;
     background: red url('https://i.imgur.com/8UFCDym.png');
@@ -6,18 +13,18 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    font-family: 'Helvetica';
+    font-family: 'pokemon-font';
     min-height: 100vh;
     min-width: 100%;
     padding: 3vh 3vw;
 }
 
 .pokemon {
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     position: fixed;
-    left: 15vw;
-    top: 15vh;
+    left: 20vw;
+    top: 30vh;
 }
 
 .score{
@@ -27,19 +34,29 @@ body {
     position: fixed;
     left: 75vw;
     top: -1vh;
+    font-family: 'pokemon-font';
 }
 
 .monName{
     display: none;
-    font-size: 15px;
+    font-size: 20px;
+    position: fixed;
+    left: 25vw;
+    top: 70vh;
 }
 
 .form {
     margin: 0 auto;
-    margin-bottom: 35px;
+    margin-bottom: 0;
     font-size: 20px;
     text-align: center;
     position: fixed;
-    top: 75vh;
+    top: 80vh;
+    left: 14vw;
+}
+
+.start {
+    position: fixed;
     left: 10vw;
+    top: 80vh;
 }

@@ -24,7 +24,6 @@ const scoreCounter = document.querySelector('h3')
 let pokeImg = document.querySelector('.pokemon')
 const pokeName = document.querySelector('.monName')
 const enterButton = document.querySelector('.enter')
-const guess = document.querySelector('.answer')
 let rightMon = document.querySelector('.image')
 
 /*----- event listeners -----*/
@@ -49,15 +48,27 @@ function playSound() {
 }
 
 function checkAnswer() {
-    if(guess.value.toLowerCase() === pokeName.innerText.toLowerCase()) {
+    let answer = document.getElementById("input").value;
+    if(answer.toLowerCase() === pokeName.innerText.toLowerCase()) {
         counter += 1
         scoreCounter.innerText = ('Score: ' + counter)
-    } else if (counter > 0) {
-        counter -= 1
-        scoreCounter.innerText = ('Score: ' + counter)
+        rightMon.classList.add('imageFade')
+        pokeImg.src = allPokemon[i].imgfull
+        pokeName.style.display = 'block'
+
+    } else {
+        rightMon.classList.add('imageFade')
+        pokeImg.src = allPokemon[i].imgfull
+        pokeName.style.display = 'block'
     }
-    rightMon.classList.add('imageFade')
-    pokeImg.src = allPokemon[i].imgfull
-    pokeName.style.display = 'block'
-    guess.value = ''
+    setTimeout(nextMon, 2000);
+}
+
+function nextMon() {
+    let random = Math.ceil(Math.random() * 3) -1
+    i = random
+    pokeImg.src = allPokemon[i].silhouette
+    pokeName.innerText = allPokemon[i].name
+    pokeName.style.display = 'none'
+    playSound()
 }
