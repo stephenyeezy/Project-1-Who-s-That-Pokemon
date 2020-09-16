@@ -15,7 +15,7 @@ Please follow the below link to deploy the game.
 
 Click start button to start playing!
 
-[Who's That Pokemon?](https://stephenyeezy.github.io/Project-1-Who-s-That-Pokemon/)
+[Who's That Pokemon?](https://stephenyeezy.github.io/Who-s-That-Pokemon-Game/)
 
 ## Next Steps
 * Add more Pokemon
